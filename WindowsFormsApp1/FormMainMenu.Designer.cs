@@ -129,6 +129,7 @@ namespace WindowsFormsApp1
             this.btnProductAttributes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnProductAttributes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnProductAttributes.UseVisualStyleBackColor = false;
+            this.btnProductAttributes.Click += new System.EventHandler(this.btnProductAttributes_Click);
             // 
             // btnProductType
             // 

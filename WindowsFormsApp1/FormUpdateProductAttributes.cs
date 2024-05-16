@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class FormUpdateProductCategory : Form
+    public partial class FormUpdateProductAttributes : Form
     {
         DataBase database = new DataBase();
         List<string> goodsNames;
-        public FormUpdateProductCategory()
+        public FormUpdateProductAttributes()
         {
             InitializeComponent();
             tableLayoutPanelDeskTop.BackColor = Color.Black;
@@ -28,10 +28,12 @@ namespace WindowsFormsApp1
         {
             int idValue = (int)(idNumeric.Value);
             string name = nameBox.Text;
-            int idWorkshop = (int)(workshopNumeric.Value);
-            string[] columnsName = { "id", "name", "id_workshop" };
-            string[] columnsValue = { Convert.ToString(idValue), name, Convert.ToString(idWorkshop) };
-            database.UpdateElement(idValue, "productcategory", columnsName, columnsValue);
+            int idType = (int)(typeNumeric.Value);
+            string type = typeBox.Text;
+            string value = valueBox.Text;
+            string[] columnsName = { "id", "name", "id_workshop", "type", "value" };
+            string[] columnsValue = { Convert.ToString(idValue), name, Convert.ToString(idType), type, value };
+            database.UpdateElement(idValue, "productattributes", columnsName, columnsValue);
             MessageBox.Show("Товар успішно змінено.");
             this.Close();
         }

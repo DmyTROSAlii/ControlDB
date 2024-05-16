@@ -87,17 +87,53 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataBase.cs" />
+    <Compile Include="FormTestingProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTestingProduct.Designer.cs">
+      <DependentUpon>FormTestingProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDeleteTestingProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDeleteTestingProduct.Designer.cs">
+      <DependentUpon>FormDeleteTestingProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDeleteProductAttributes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDeleteProductAttributes.Designer.cs">
+      <DependentUpon>FormDeleteProductAttributes.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormDeleteProductCategory.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormDeleteProductCategory.Designer.cs">
       <DependentUpon>FormDeleteProductCategory.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormInsertTestingProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInsertTestingProduct.Designer.cs">
+      <DependentUpon>FormInsertTestingProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInsertProductAttributes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInsertProductAttributes.Designer.cs">
+      <DependentUpon>FormInsertProductAttributes.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormInsertProductCategory.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormInsertProductCategory.Designer.cs">
       <DependentUpon>FormInsertProductCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProductAttributes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProductAttributes.Designer.cs">
+      <DependentUpon>FormProductAttributes.cs</DependentUpon>
     </Compile>
     <Compile Include="FormProductCategory.cs">
       <SubType>Form</SubType>
@@ -183,6 +219,18 @@
     <Compile Include="FormEnterprise.Designer.cs">
       <DependentUpon>FormEnterprise.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormUpdateTestingProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUpdateTestingProduct.Designer.cs">
+      <DependentUpon>FormUpdateTestingProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUpdateProductAttributes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUpdateProductAttributes.Designer.cs">
+      <DependentUpon>FormUpdateProductAttributes.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormUpdateProductCategory.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -222,11 +270,29 @@
     </Compile>
     <Compile Include="Tables.cs" />
     <Compile Include="ThemeColor.cs" />
+    <EmbeddedResource Include="FormTestingProduct.resx">
+      <DependentUpon>FormTestingProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDeleteTestingProduct.resx">
+      <DependentUpon>FormDeleteTestingProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDeleteProductAttributes.resx">
+      <DependentUpon>FormDeleteProductAttributes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormDeleteProductCategory.resx">
       <DependentUpon>FormDeleteProductCategory.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormInsertTestingProduct.resx">
+      <DependentUpon>FormInsertTestingProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInsertProductAttributes.resx">
+      <DependentUpon>FormInsertProductAttributes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormInsertProductCategory.resx">
       <DependentUpon>FormInsertProductCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProductAttributes.resx">
+      <DependentUpon>FormProductAttributes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormProductCategory.resx">
       <DependentUpon>FormProductCategory.cs</DependentUpon>
@@ -269,6 +335,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormEnterprise.resx">
       <DependentUpon>FormEnterprise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUpdateTestingProduct.resx">
+      <DependentUpon>FormUpdateTestingProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUpdateProductAttributes.resx">
+      <DependentUpon>FormUpdateProductAttributes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormUpdateProductCategory.resx">
       <DependentUpon>FormUpdateProductCategory.cs</DependentUpon>

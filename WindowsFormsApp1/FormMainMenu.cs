@@ -149,5 +149,12 @@ namespace WindowsFormsApp1
             lblTitle.Text = "ProductType";
             OpenChildForm(new FormProductType());
         }
+
+        private void btnProductAttributes_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            lblTitle.Text = "ProductAttributes";
+            OpenChildForm(new FormProductAttributes());
+        }
     }
 }
