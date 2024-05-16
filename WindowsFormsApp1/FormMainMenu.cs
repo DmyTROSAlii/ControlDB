@@ -22,11 +22,11 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
             random = new Random();
-            panelMenu.BackColor = Color.FromArgb(31, 30, 68);
-            panelLogo.BackColor = Color.FromArgb(34, 32, 77);
-            panelTitleBar.BackColor = Color.FromArgb(26, 25, 58);
-            panelShadow.BackColor = Color.FromArgb(26, 24, 58);
-            panelDesktop.BackColor = Color.FromArgb(34, 33, 74);
+            panelMenu.BackColor = Color.Black;
+            panelLogo.BackColor = Color.Black;
+            panelTitleBar.BackColor = Color.Black;
+            panelDesktop.BackColor = Color.Black;
+            
         }
 
         // Methods
@@ -52,7 +52,6 @@ namespace WindowsFormsApp1
                     Color color = SelectThemeColor();
                     currentButton = (Button)btnSender;
                     currentButton.BackColor = color;
-                    panelShadow.BackColor = color;
                     currentButton.ForeColor = Color.White;
                     currentButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
                 }
@@ -71,39 +70,6 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void btnProducts_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender);
-            lblTitle.Text = "Товари";
-            OpenChildForm(new FormGoods());
-        }
-        private void btnOrders_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender);
-            lblTitle.Text = "Замовлення";
-            OpenChildForm(new FormOrders());
-        }
-
-        private void btnStocks_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender);
-            lblTitle.Text = "Запаси товарів";
-            OpenChildForm(new FormStocks());
-        }
-
-        private void btnNotifications_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender);
-            lblTitle.Text = "Повідомлення";
-            OpenChildForm(new FormNotifications());
-        }
-
-        private void btnSettings_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender);
-            lblTitle.Text = "Настройки";
-            OpenChildForm(new FormSettings());
-        }
         private void OpenChildForm(Form childForm)
         {
             if (activeForm != null)
@@ -132,6 +98,56 @@ namespace WindowsFormsApp1
         private void Form_DataBase_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnEnterprise_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            lblTitle.Text = "Enterprise";
+            OpenChildForm(new FormEnterprise());
+        }
+
+        private void btnArea_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            lblTitle.Text = "Area";
+            OpenChildForm(new FormArea());
+        }
+
+        private void btnBrigade_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            lblTitle.Text = "Brigade";
+            OpenChildForm(new FormBrigade());
+        }
+
+        private void btnWorkers_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnWorkshop_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblTitle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnProductCategory_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            lblTitle.Text = "ProductCategory";
+            OpenChildForm(new FormProductCategory());
+        }
+
+        private void btnProductType_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            lblTitle.Text = "ProductType";
+            OpenChildForm(new FormProductType());
         }
     }
 }

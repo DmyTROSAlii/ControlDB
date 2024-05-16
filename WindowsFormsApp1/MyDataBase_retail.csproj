@@ -87,17 +87,89 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataBase.cs" />
-    <Compile Include="FormDeleteGoods.cs">
+    <Compile Include="FormDeleteProductCategory.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormDeleteGoods.Designer.cs">
-      <DependentUpon>FormDeleteGoods.cs</DependentUpon>
+    <Compile Include="FormDeleteProductCategory.Designer.cs">
+      <DependentUpon>FormDeleteProductCategory.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormInsertGoods.cs">
+    <Compile Include="FormInsertProductCategory.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormInsertGoods.Designer.cs">
-      <DependentUpon>FormInsertGoods.cs</DependentUpon>
+    <Compile Include="FormInsertProductCategory.Designer.cs">
+      <DependentUpon>FormInsertProductCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProductCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProductCategory.Designer.cs">
+      <DependentUpon>FormProductCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProductType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProductType.Designer.cs">
+      <DependentUpon>FormProductType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBrigade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBrigade.Designer.cs">
+      <DependentUpon>FormBrigade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDeleteProductType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDeleteProductType.Designer.cs">
+      <DependentUpon>FormDeleteProductType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDeleteBrigade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDeleteBrigade.Designer.cs">
+      <DependentUpon>FormDeleteBrigade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDeleteArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDeleteArea.Designer.cs">
+      <DependentUpon>FormDeleteArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDeleteEnterprise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDeleteEnterprise.Designer.cs">
+      <DependentUpon>FormDeleteEnterprise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormArea.Designer.cs">
+      <DependentUpon>FormArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInsertProductType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInsertProductType.Designer.cs">
+      <DependentUpon>FormInsertProductType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInsertBrigade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInsertBrigade.Designer.cs">
+      <DependentUpon>FormInsertBrigade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInsertArea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInsertArea.Designer.cs">
+      <DependentUpon>FormInsertArea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInsertEnterprise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInsertEnterprise.Designer.cs">
+      <DependentUpon>FormInsertEnterprise.cs</DependentUpon>
     </Compile>
     <Compile Include="FormMainMenu.cs">
       <SubType>Form</SubType>
@@ -105,82 +177,119 @@
     <Compile Include="FormMainMenu.Designer.cs">
       <DependentUpon>FormMainMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormGoods.cs">
+    <Compile Include="FormEnterprise.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormGoods.Designer.cs">
-      <DependentUpon>FormGoods.cs</DependentUpon>
+    <Compile Include="FormEnterprise.Designer.cs">
+      <DependentUpon>FormEnterprise.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormNotifications.cs">
+    <Compile Include="FormUpdateProductCategory.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormNotifications.Designer.cs">
-      <DependentUpon>FormNotifications.cs</DependentUpon>
+    <Compile Include="FormUpdateProductCategory.Designer.cs">
+      <DependentUpon>FormUpdateProductCategory.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormOrders.cs">
+    <Compile Include="FormUpdateProductType.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormOrders.Designer.cs">
-      <DependentUpon>FormOrders.cs</DependentUpon>
+    <Compile Include="FormUpdateProductType.Designer.cs">
+      <DependentUpon>FormUpdateProductType.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormSettings.cs">
+    <Compile Include="FormUpdateBrigade.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormSettings.Designer.cs">
-      <DependentUpon>FormSettings.cs</DependentUpon>
+    <Compile Include="FormUpdateBrigade.Designer.cs">
+      <DependentUpon>FormUpdateBrigade.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormStocks.cs">
+    <Compile Include="FormUpdateArea.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormStocks.Designer.cs">
-      <DependentUpon>FormStocks.cs</DependentUpon>
+    <Compile Include="FormUpdateArea.Designer.cs">
+      <DependentUpon>FormUpdateArea.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormUpdateGoods.cs">
+    <Compile Include="FormUpdateEnterprise.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormUpdateGoods.Designer.cs">
-      <DependentUpon>FormUpdateGoods.cs</DependentUpon>
+    <Compile Include="FormUpdateEnterprise.Designer.cs">
+      <DependentUpon>FormUpdateEnterprise.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Tables.cs" />
     <Compile Include="ThemeColor.cs" />
-    <EmbeddedResource Include="FormDeleteGoods.resx">
-      <DependentUpon>FormDeleteGoods.cs</DependentUpon>
+    <EmbeddedResource Include="FormDeleteProductCategory.resx">
+      <DependentUpon>FormDeleteProductCategory.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormInsertGoods.resx">
-      <DependentUpon>FormInsertGoods.cs</DependentUpon>
+    <EmbeddedResource Include="FormInsertProductCategory.resx">
+      <DependentUpon>FormInsertProductCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProductCategory.resx">
+      <DependentUpon>FormProductCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProductType.resx">
+      <DependentUpon>FormProductType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBrigade.resx">
+      <DependentUpon>FormBrigade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDeleteProductType.resx">
+      <DependentUpon>FormDeleteProductType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDeleteBrigade.resx">
+      <DependentUpon>FormDeleteBrigade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDeleteArea.resx">
+      <DependentUpon>FormDeleteArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDeleteEnterprise.resx">
+      <DependentUpon>FormDeleteEnterprise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormArea.resx">
+      <DependentUpon>FormArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInsertProductType.resx">
+      <DependentUpon>FormInsertProductType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInsertBrigade.resx">
+      <DependentUpon>FormInsertBrigade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInsertArea.resx">
+      <DependentUpon>FormInsertArea.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInsertEnterprise.resx">
+      <DependentUpon>FormInsertEnterprise.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMainMenu.resx">
       <DependentUpon>FormMainMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormGoods.resx">
-      <DependentUpon>FormGoods.cs</DependentUpon>
+    <EmbeddedResource Include="FormEnterprise.resx">
+      <DependentUpon>FormEnterprise.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormNotifications.resx">
-      <DependentUpon>FormNotifications.cs</DependentUpon>
+    <EmbeddedResource Include="FormUpdateProductCategory.resx">
+      <DependentUpon>FormUpdateProductCategory.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormOrders.resx">
-      <DependentUpon>FormOrders.cs</DependentUpon>
+    <EmbeddedResource Include="FormUpdateProductType.resx">
+      <DependentUpon>FormUpdateProductType.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormSettings.resx">
-      <DependentUpon>FormSettings.cs</DependentUpon>
+    <EmbeddedResource Include="FormUpdateBrigade.resx">
+      <DependentUpon>FormUpdateBrigade.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormStocks.resx">
-      <DependentUpon>FormStocks.cs</DependentUpon>
+    <EmbeddedResource Include="FormUpdateArea.resx">
+      <DependentUpon>FormUpdateArea.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormUpdateGoods.resx">
-      <DependentUpon>FormUpdateGoods.cs</DependentUpon>
+    <EmbeddedResource Include="FormUpdateEnterprise.resx">
+      <DependentUpon>FormUpdateEnterprise.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -196,28 +305,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Icons\shops.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Icons\orders.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Icons\Warehouses.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Icons\settings.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Icons\notifications.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Icons\insert.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Icons\delete.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Icons\update.png" />
+    <None Include="Icons\table.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
