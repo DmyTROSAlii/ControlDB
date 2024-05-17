@@ -32,21 +32,21 @@ namespace WindowsFormsApp1
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormInsertTestingProduct));
             this.panelDeskTop = new System.Windows.Forms.Panel();
             this.tableLayoutPanelDeskTop = new System.Windows.Forms.TableLayoutPanel();
+            this.btnInsert = new System.Windows.Forms.Button();
+            this.endCalendar = new System.Windows.Forms.MonthCalendar();
+            this.startCalendar = new System.Windows.Forms.MonthCalendar();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.nameBox = new System.Windows.Forms.TextBox();
             this.typeNumeric = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
             this.testerNumeric = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.equipBox = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.nameBox = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.resultBox = new System.Windows.Forms.TextBox();
-            this.startCalendar = new System.Windows.Forms.MonthCalendar();
-            this.endCalendar = new System.Windows.Forms.MonthCalendar();
-            this.btnInsert = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.panelDeskTop.SuspendLayout();
             this.tableLayoutPanelDeskTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.typeNumeric)).BeginInit();
@@ -107,151 +107,6 @@ namespace WindowsFormsApp1
             this.tableLayoutPanelDeskTop.Size = new System.Drawing.Size(588, 393);
             this.tableLayoutPanelDeskTop.TabIndex = 0;
             // 
-            // typeNumeric
-            // 
-            this.typeNumeric.Location = new System.Drawing.Point(290, 3);
-            this.typeNumeric.Name = "typeNumeric";
-            this.typeNumeric.Size = new System.Drawing.Size(295, 20);
-            this.typeNumeric.TabIndex = 18;
-            // 
-            // label2
-            // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(179, 0);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Padding = new System.Windows.Forms.Padding(4);
-            this.label2.Size = new System.Drawing.Size(106, 21);
-            this.label2.TabIndex = 19;
-            this.label2.Text = "Тип продукту№";
-            // 
-            // testerNumeric
-            // 
-            this.testerNumeric.Location = new System.Drawing.Point(290, 35);
-            this.testerNumeric.Name = "testerNumeric";
-            this.testerNumeric.Size = new System.Drawing.Size(295, 20);
-            this.testerNumeric.TabIndex = 20;
-            // 
-            // label3
-            // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(216, 32);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Padding = new System.Windows.Forms.Padding(4);
-            this.label3.Size = new System.Drawing.Size(69, 21);
-            this.label3.TabIndex = 17;
-            this.label3.Text = "Тестер№";
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(198, 58);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Padding = new System.Windows.Forms.Padding(4);
-            this.label1.Size = new System.Drawing.Size(87, 21);
-            this.label1.TabIndex = 21;
-            this.label1.Text = "Обладнання";
-            // 
-            // equipBox
-            // 
-            this.equipBox.Location = new System.Drawing.Point(290, 61);
-            this.equipBox.Name = "equipBox";
-            this.equipBox.Size = new System.Drawing.Size(295, 20);
-            this.equipBox.TabIndex = 22;
-            // 
-            // label4
-            // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(197, 84);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Padding = new System.Windows.Forms.Padding(4);
-            this.label4.Size = new System.Drawing.Size(88, 21);
-            this.label4.TabIndex = 23;
-            this.label4.Text = "Назва тесту";
-            // 
-            // nameBox
-            // 
-            this.nameBox.Location = new System.Drawing.Point(290, 87);
-            this.nameBox.Name = "nameBox";
-            this.nameBox.Size = new System.Drawing.Size(295, 20);
-            this.nameBox.TabIndex = 24;
-            // 
-            // label5
-            // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(221, 110);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Padding = new System.Windows.Forms.Padding(4);
-            this.label5.Size = new System.Drawing.Size(64, 21);
-            this.label5.TabIndex = 25;
-            this.label5.Text = "Початок";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(289, 110);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Padding = new System.Windows.Forms.Padding(4);
-            this.label6.Size = new System.Drawing.Size(54, 21);
-            this.label6.TabIndex = 26;
-            this.label6.Text = "Кінець";
-            // 
-            // label7
-            // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(209, 311);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Padding = new System.Windows.Forms.Padding(4);
-            this.label7.Size = new System.Drawing.Size(76, 21);
-            this.label7.TabIndex = 27;
-            this.label7.Text = "Результат";
-            // 
-            // resultBox
-            // 
-            this.resultBox.Location = new System.Drawing.Point(290, 314);
-            this.resultBox.Name = "resultBox";
-            this.resultBox.Size = new System.Drawing.Size(295, 20);
-            this.resultBox.TabIndex = 28;
-            // 
-            // startCalendar
-            // 
-            this.startCalendar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.startCalendar.Location = new System.Drawing.Point(114, 140);
-            this.startCalendar.Name = "startCalendar";
-            this.startCalendar.TabIndex = 30;
-            // 
-            // endCalendar
-            // 
-            this.endCalendar.Location = new System.Drawing.Point(296, 140);
-            this.endCalendar.Name = "endCalendar";
-            this.endCalendar.TabIndex = 31;
-            // 
             // btnInsert
             // 
             this.tableLayoutPanelDeskTop.SetColumnSpan(this.btnInsert, 2);
@@ -265,6 +120,152 @@ namespace WindowsFormsApp1
             this.btnInsert.TabIndex = 32;
             this.btnInsert.Text = "Додати товар";
             this.btnInsert.UseVisualStyleBackColor = true;
+            this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
+            // 
+            // endCalendar
+            // 
+            this.endCalendar.Location = new System.Drawing.Point(295, 140);
+            this.endCalendar.Name = "endCalendar";
+            this.endCalendar.TabIndex = 31;
+            // 
+            // startCalendar
+            // 
+            this.startCalendar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.startCalendar.Location = new System.Drawing.Point(113, 140);
+            this.startCalendar.Name = "startCalendar";
+            this.startCalendar.TabIndex = 30;
+            // 
+            // label7
+            // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(208, 311);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Name = "label7";
+            this.label7.Padding = new System.Windows.Forms.Padding(4);
+            this.label7.Size = new System.Drawing.Size(76, 21);
+            this.label7.TabIndex = 27;
+            this.label7.Text = "Результат";
+            // 
+            // label4
+            // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(196, 84);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Padding = new System.Windows.Forms.Padding(4);
+            this.label4.Size = new System.Drawing.Size(88, 21);
+            this.label4.TabIndex = 23;
+            this.label4.Text = "Назва тесту";
+            // 
+            // nameBox
+            // 
+            this.nameBox.Location = new System.Drawing.Point(289, 87);
+            this.nameBox.Name = "nameBox";
+            this.nameBox.Size = new System.Drawing.Size(295, 20);
+            this.nameBox.TabIndex = 24;
+            // 
+            // typeNumeric
+            // 
+            this.typeNumeric.Location = new System.Drawing.Point(289, 3);
+            this.typeNumeric.Name = "typeNumeric";
+            this.typeNumeric.Size = new System.Drawing.Size(295, 20);
+            this.typeNumeric.TabIndex = 18;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(178, 0);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Padding = new System.Windows.Forms.Padding(4);
+            this.label2.Size = new System.Drawing.Size(106, 21);
+            this.label2.TabIndex = 19;
+            this.label2.Text = "Тип продукту№";
+            // 
+            // testerNumeric
+            // 
+            this.testerNumeric.Location = new System.Drawing.Point(289, 35);
+            this.testerNumeric.Name = "testerNumeric";
+            this.testerNumeric.Size = new System.Drawing.Size(295, 20);
+            this.testerNumeric.TabIndex = 20;
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(215, 32);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Padding = new System.Windows.Forms.Padding(4);
+            this.label3.Size = new System.Drawing.Size(69, 21);
+            this.label3.TabIndex = 17;
+            this.label3.Text = "Тестер№";
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(197, 58);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Padding = new System.Windows.Forms.Padding(4);
+            this.label1.Size = new System.Drawing.Size(87, 21);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "Обладнання";
+            // 
+            // equipBox
+            // 
+            this.equipBox.Location = new System.Drawing.Point(289, 61);
+            this.equipBox.Name = "equipBox";
+            this.equipBox.Size = new System.Drawing.Size(295, 20);
+            this.equipBox.TabIndex = 22;
+            // 
+            // resultBox
+            // 
+            this.resultBox.Location = new System.Drawing.Point(289, 314);
+            this.resultBox.Name = "resultBox";
+            this.resultBox.Size = new System.Drawing.Size(295, 20);
+            this.resultBox.TabIndex = 28;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(288, 110);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Padding = new System.Windows.Forms.Padding(4);
+            this.label6.Size = new System.Drawing.Size(54, 21);
+            this.label6.TabIndex = 26;
+            this.label6.Text = "Кінець";
+            // 
+            // label5
+            // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(220, 110);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Padding = new System.Windows.Forms.Padding(4);
+            this.label5.Size = new System.Drawing.Size(64, 21);
+            this.label5.TabIndex = 25;
+            this.label5.Text = "Початок";
             // 
             // FormInsertTestingProduct
             // 

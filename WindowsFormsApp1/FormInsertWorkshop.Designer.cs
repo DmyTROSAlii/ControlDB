@@ -1,7 +1,7 @@
 ﻿
 namespace WindowsFormsApp1
 {
-    partial class FormInsertArea
+    partial class FormInsertWorkshop
     {
         /// <summary>
         /// Required designer variable.
@@ -29,19 +29,19 @@ namespace WindowsFormsApp1
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormInsertArea));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormInsertWorkshop));
             this.panelDeskTop = new System.Windows.Forms.Panel();
             this.tableLayoutPanelDeskTop = new System.Windows.Forms.TableLayoutPanel();
-            this.workshopNumeric = new System.Windows.Forms.NumericUpDown();
+            this.enterpriseNumeric = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
             this.bossNumeric = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox_Name = new System.Windows.Forms.TextBox();
+            this.nameBox = new System.Windows.Forms.TextBox();
             this.btnInsert = new System.Windows.Forms.Button();
             this.panelDeskTop.SuspendLayout();
             this.tableLayoutPanelDeskTop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.workshopNumeric)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.enterpriseNumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bossNumeric)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,12 +61,12 @@ namespace WindowsFormsApp1
             this.tableLayoutPanelDeskTop.ColumnCount = 2;
             this.tableLayoutPanelDeskTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanelDeskTop.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanelDeskTop.Controls.Add(this.workshopNumeric, 1, 1);
+            this.tableLayoutPanelDeskTop.Controls.Add(this.enterpriseNumeric, 1, 1);
             this.tableLayoutPanelDeskTop.Controls.Add(this.label2, 0, 1);
             this.tableLayoutPanelDeskTop.Controls.Add(this.bossNumeric, 1, 2);
             this.tableLayoutPanelDeskTop.Controls.Add(this.label3, 0, 2);
             this.tableLayoutPanelDeskTop.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanelDeskTop.Controls.Add(this.textBox_Name, 1, 0);
+            this.tableLayoutPanelDeskTop.Controls.Add(this.nameBox, 1, 0);
             this.tableLayoutPanelDeskTop.Controls.Add(this.btnInsert, 1, 3);
             this.tableLayoutPanelDeskTop.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanelDeskTop.Location = new System.Drawing.Point(0, 0);
@@ -87,12 +87,12 @@ namespace WindowsFormsApp1
             this.tableLayoutPanelDeskTop.Size = new System.Drawing.Size(588, 175);
             this.tableLayoutPanelDeskTop.TabIndex = 0;
             // 
-            // workshopNumeric
+            // enterpriseNumeric
             // 
-            this.workshopNumeric.Location = new System.Drawing.Point(179, 27);
-            this.workshopNumeric.Name = "workshopNumeric";
-            this.workshopNumeric.Size = new System.Drawing.Size(406, 20);
-            this.workshopNumeric.TabIndex = 18;
+            this.enterpriseNumeric.Location = new System.Drawing.Point(179, 27);
+            this.enterpriseNumeric.Name = "enterpriseNumeric";
+            this.enterpriseNumeric.Size = new System.Drawing.Size(406, 20);
+            this.enterpriseNumeric.TabIndex = 18;
             // 
             // label2
             // 
@@ -106,7 +106,7 @@ namespace WindowsFormsApp1
             this.label2.Padding = new System.Windows.Forms.Padding(4);
             this.label2.Size = new System.Drawing.Size(84, 21);
             this.label2.TabIndex = 19;
-            this.label2.Text = "Workshop№";
+            this.label2.Text = "Enterprise№";
             // 
             // bossNumeric
             // 
@@ -135,22 +135,22 @@ namespace WindowsFormsApp1
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(118, 0);
+            this.label1.Location = new System.Drawing.Point(78, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Padding = new System.Windows.Forms.Padding(4);
-            this.label1.Size = new System.Drawing.Size(56, 21);
+            this.label1.Size = new System.Drawing.Size(96, 21);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Назва ";
+            this.label1.Text = "Назва товару";
             // 
-            // textBox_Name
+            // nameBox
             // 
-            this.textBox_Name.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox_Name.Location = new System.Drawing.Point(178, 2);
-            this.textBox_Name.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox_Name.Name = "textBox_Name";
-            this.textBox_Name.Size = new System.Drawing.Size(408, 20);
-            this.textBox_Name.TabIndex = 1;
+            this.nameBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.nameBox.Location = new System.Drawing.Point(178, 2);
+            this.nameBox.Margin = new System.Windows.Forms.Padding(2);
+            this.nameBox.Name = "nameBox";
+            this.nameBox.Size = new System.Drawing.Size(408, 20);
+            this.nameBox.TabIndex = 1;
             // 
             // btnInsert
             // 
@@ -166,7 +166,7 @@ namespace WindowsFormsApp1
             this.btnInsert.UseVisualStyleBackColor = true;
             this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
             // 
-            // FormInsertArea
+            // FormInsertWorkshop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -179,13 +179,13 @@ namespace WindowsFormsApp1
             this.MaximumSize = new System.Drawing.Size(604, 414);
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(604, 214);
-            this.Name = "FormInsertArea";
+            this.Name = "FormInsertWorkshop";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Insert";
             this.panelDeskTop.ResumeLayout(false);
             this.tableLayoutPanelDeskTop.ResumeLayout(false);
             this.tableLayoutPanelDeskTop.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.workshopNumeric)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.enterpriseNumeric)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bossNumeric)).EndInit();
             this.ResumeLayout(false);
 
@@ -196,9 +196,9 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Panel panelDeskTop;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanelDeskTop;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox_Name;
+        private System.Windows.Forms.TextBox nameBox;
         private System.Windows.Forms.Button btnInsert;
-        private System.Windows.Forms.NumericUpDown workshopNumeric;
+        private System.Windows.Forms.NumericUpDown enterpriseNumeric;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.NumericUpDown bossNumeric;
         private System.Windows.Forms.Label label3;

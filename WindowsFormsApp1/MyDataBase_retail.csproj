@@ -87,6 +87,72 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataBase.cs" />
+    <Compile Include="FormWorkshop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWorkshop.Designer.cs">
+      <DependentUpon>FormWorkshop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDeleteWorkshop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDeleteWorkshop.Designer.cs">
+      <DependentUpon>FormDeleteWorkshop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDeleteWorkers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDeleteWorkers.Designer.cs">
+      <DependentUpon>FormDeleteWorkers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDeleteWorkcycle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDeleteWorkcycle.Designer.cs">
+      <DependentUpon>FormDeleteWorkcycle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInsertWorkshop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInsertWorkshop.Designer.cs">
+      <DependentUpon>FormInsertWorkshop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInsertWorkers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInsertWorkers.Designer.cs">
+      <DependentUpon>FormInsertWorkers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInsertWorkcycle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInsertWorkcycle.Designer.cs">
+      <DependentUpon>FormInsertWorkcycle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUpdateWorkshop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUpdateWorkshop.Designer.cs">
+      <DependentUpon>FormUpdateWorkshop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUpdateWorkers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUpdateWorkers.Designer.cs">
+      <DependentUpon>FormUpdateWorkers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWorkers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWorkers.Designer.cs">
+      <DependentUpon>FormWorkers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWorkcycle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWorkcycle.Designer.cs">
+      <DependentUpon>FormWorkcycle.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormTestingProduct.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -219,6 +285,12 @@
     <Compile Include="FormEnterprise.Designer.cs">
       <DependentUpon>FormEnterprise.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormUpdateWorkcycle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUpdateWorkcycle.Designer.cs">
+      <DependentUpon>FormUpdateWorkcycle.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormUpdateTestingProduct.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -268,8 +340,40 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Tables.cs" />
     <Compile Include="ThemeColor.cs" />
+    <EmbeddedResource Include="FormWorkshop.resx">
+      <DependentUpon>FormWorkshop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDeleteWorkshop.resx">
+      <DependentUpon>FormDeleteWorkshop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDeleteWorkers.resx">
+      <DependentUpon>FormDeleteWorkers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDeleteWorkcycle.resx">
+      <DependentUpon>FormDeleteWorkcycle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInsertWorkshop.resx">
+      <DependentUpon>FormInsertWorkshop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInsertWorkers.resx">
+      <DependentUpon>FormInsertWorkers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInsertWorkcycle.resx">
+      <DependentUpon>FormInsertWorkcycle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUpdateWorkshop.resx">
+      <DependentUpon>FormUpdateWorkshop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUpdateWorkers.resx">
+      <DependentUpon>FormUpdateWorkers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWorkers.resx">
+      <DependentUpon>FormWorkers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWorkcycle.resx">
+      <DependentUpon>FormWorkcycle.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormTestingProduct.resx">
       <DependentUpon>FormTestingProduct.cs</DependentUpon>
     </EmbeddedResource>
@@ -336,6 +440,9 @@
     <EmbeddedResource Include="FormEnterprise.resx">
       <DependentUpon>FormEnterprise.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormUpdateWorkcycle.resx">
+      <DependentUpon>FormUpdateWorkcycle.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormUpdateTestingProduct.resx">
       <DependentUpon>FormUpdateTestingProduct.cs</DependentUpon>
     </EmbeddedResource>
@@ -362,6 +469,7 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

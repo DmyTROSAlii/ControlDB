@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="WindowsFormsApp1.DataBase" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAABAAAAAAIxAAAAAAAQEAAAAAAAAAAQIAA=</HashCode>
+      <FileName>DataBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.FormArea" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAhYAAAACCCAAAAEABCAQABKAAQIIAAAAYAAAAACASw=</HashCode>
+      <FileName>FormArea.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.FormBrigade" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABYAAAACCGAAAAEABCAQABKAAQIIAAAAMAAAAACASw=</HashCode>
+      <FileName>FormBrigade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.FormDeleteArea" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAACAAAIBAAgCAAAACAAAAAAAAAAAAABAAEgA=</HashCode>
+      <FileName>FormDeleteArea.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.FormDeleteBrigade" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAACAAAIBAAgCAAAACAAAAAAAAAAAAABAAEgA=</HashCode>
+      <FileName>FormDeleteBrigade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.FormDeleteEnterprise" Collapsed="true">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAACAAAIBAAgCAAAACAAAAAAAAAAAAABAAEgA=</HashCode>
+      <FileName>FormDeleteEnterprise.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.FormDeleteProductAttributes" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAACAAAIBAAgCAAAACAAAAAAAAAAAAABAAEgA=</HashCode>
+      <FileName>FormDeleteProductAttributes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.FormDeleteProductCategory" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAACAAAIBAAgCAAAACAAAAAAAAAAAAABAAEgA=</HashCode>
+      <FileName>FormDeleteProductCategory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.FormDeleteProductType" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAACAAAIBAAgCAAAACAAAAAAAAAAAAABAAEgA=</HashCode>
+      <FileName>FormDeleteProductType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.FormDeleteTestingProduct" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAACAAAIBAAgCAAAACAAAAAAAAAAAAABAAEgA=</HashCode>
+      <FileName>FormDeleteTestingProduct.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.FormDeleteWorkcycle" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAACAAAIBAAgCAAAACAAAAAAAAAAAAABAAEgA=</HashCode>
+      <FileName>FormDeleteWorkcycle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.FormDeleteWorkers" Collapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAACAAAIBAAgCAAAACAAAAAAAAAAAAABAAEgA=</HashCode>
+      <FileName>FormDeleteWorkers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.FormDeleteWorkshop" Collapsed="true">
+    <Position X="11" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAACAAAIBAAgCAAAACAAAAAAAAAAAAABAAEgA=</HashCode>
+      <FileName>FormDeleteWorkshop.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.FormEnterprise" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABYAAAACCGAAAAEABCAQABKAAQIIAAAAMAAAAACASw=</HashCode>
+      <FileName>FormEnterprise.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.FormInsertArea" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQDAAAACAAAJBAAACAQAACAAAAAAAAAAAQAAAABAA=</HashCode>
+      <FileName>FormInsertArea.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.FormInsertBrigade" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQDAAAACAAAJBAAACAUAACAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FormInsertBrigade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.FormInsertEnterprise" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQCAAAACAAAJBAABCAQAACAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>FormInsertEnterprise.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.FormInsertProductAttributes" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQDAAQACAAAJBAAACAQAACAAAAABBAAAAAAAAAAAA=</HashCode>
+      <FileName>FormInsertProductAttributes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.FormInsertProductCategory" Collapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQCAAQACAAAJBAAACAQAACAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>FormInsertProductCategory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.FormInsertProductType" Collapsed="true">
+    <Position X="11" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQCAAQACAAAJBAAACAQAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FormInsertProductType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.FormInsertTestingProduct" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACQCAAYACAAAJBAAACEQEACAAAAgBAAAAAAAAAAAAA=</HashCode>
+      <FileName>FormInsertTestingProduct.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.FormInsertWorkcycle" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQCAAIACAAAJBAAACAUEACgAAAAJAAAAAAAAAAAAA=</HashCode>
+      <FileName>FormInsertWorkcycle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.FormInsertWorkers" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQCAIYACAAAJBAAACAQEACAAAAAIAAAAAAAAAASBA=</HashCode>
+      <FileName>FormInsertWorkers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.FormInsertWorkshop" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQDAAQACAAAJBAAFCAQAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FormInsertWorkshop.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.Form_DataBase" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIFCAQxSAIAAAAAKCAAAAGABQKB4SgAISAABABAAg=</HashCode>
+      <FileName>FormMainMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.FormProductAttributes" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABYAAAACCGAAAAEABCAQABKAAQIIAAAAMAAAAACASw=</HashCode>
+      <FileName>FormProductAttributes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.FormProductCategory" Collapsed="true">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABYAAAACCGAAAAEABCAQABKAAQIIAAAAMAAAAACASw=</HashCode>
+      <FileName>FormProductCategory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.FormProductType" Collapsed="true">
+    <Position X="11" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABYAAAACCGAAAAEABCAQABKAAQIIAAAAMAAAAACASw=</HashCode>
+      <FileName>FormProductType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.FormTestingProduct" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABYAAAACCGAAAAEABCAQABKAAQIIAAAAMAAAAACASw=</HashCode>
+      <FileName>FormTestingProduct.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.FormUpdateArea" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EABADAAQBCAAAJBQAACABAACAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>FormUpdateArea.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.FormUpdateBrigade" Collapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAADAAABCAAAJBQAAGAFAACAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FormUpdateBrigade.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.FormUpdateEnterprise" Collapsed="true">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EABACAAQBCAAAIBQAACABAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FormUpdateEnterprise.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.FormUpdateProductAttributes" Collapsed="true">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAADAAQBCAAAJBQAAGABAACAAAAABBAAAAAAAAAAAA=</HashCode>
+      <FileName>FormUpdateProductAttributes.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.FormUpdateProductCategory" Collapsed="true">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAACAAQBCAAAJBQAAGABAACAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>FormUpdateProductCategory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.FormUpdateProductType" Collapsed="true">
+    <Position X="11" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAQCAAQBCAAAJBQAAGABAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FormUpdateProductType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.FormUpdateTestingProduct" Collapsed="true">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EACACAAYBCAAAJBQAACEBEACAAAAgBAAAAAAAAAAAAA=</HashCode>
+      <FileName>FormUpdateTestingProduct.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.FormUpdateWorkcycle" Collapsed="true">
+    <Position X="2.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAACAQIBCAAAJBQAACAFEACgAAAAJAAAAAAAAAAAAA=</HashCode>
+      <FileName>FormUpdateWorkcycle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.FormUpdateWorkers" Collapsed="true">
+    <Position X="4" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAACAYYBCAAAJBQAACAAEACAAAAAIAAAAAAAAAAQBA=</HashCode>
+      <FileName>FormUpdateWorkers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.FormUpdateWorkshop" Collapsed="true">
+    <Position X="5.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EABADAAQBCAAAJBQAECABAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FormUpdateWorkshop.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.FormWorkcycle" Collapsed="true">
+    <Position X="7.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABYAAAACCGAAAAEABCAQABKAAQIIAAAAMAAAAACASw=</HashCode>
+      <FileName>FormWorkcycle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.FormWorkers" Collapsed="true">
+    <Position X="9.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABYAAAACCGAAAAEABCAQABKAAQIIAAAAMAAAAACASw=</HashCode>
+      <FileName>FormWorkers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.FormWorkshop" Collapsed="true">
+    <Position X="11" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABYAAAACCGAAAAEABCAQABKAAQIIAAAAMAAAAACASw=</HashCode>
+      <FileName>FormWorkshop.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.Program" Collapsed="true">
+    <Position X="0.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.ThemeColor">
+    <Position X="5.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>ThemeColor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.Properties.Resources" Collapsed="true">
+    <Position X="2.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WindowsFormsApp1.Properties.Settings" Collapsed="true">
+    <Position X="4" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

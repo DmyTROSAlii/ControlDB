@@ -11,19 +11,19 @@ using System.Windows.Forms;
 namespace WindowsFormsApp1
 {
 
-    public partial class FormTestingProduct : Form
+    public partial class FormWorkshop : Form
     {
         private void ReloadData()
         {
             DataBase database = new DataBase();
-            DataTable tableData = database.GetTableData("testing_product", oldColumnNames, newColumNames, valueColumns, searchName);
+            DataTable tableData = database.GetTableData("workshop", oldColumnNames, newColumNames, valueColumns, searchName);
             dataGridViewTable.DataSource = tableData;
         }
         static string searchName;
         static int valueColumns;
-        string[] newColumNames = { "id", "Тип продукту", "Номер тестера", "Обладнання", "Назва тесту", "Початок", "Кінець", "Результат" };
-        string[] oldColumnNames = { "id", "id_productType", "id_tester", "testing_equipment", "name", "start_date", "end_date", "result" };
-        public FormTestingProduct()
+        string[] newColumNames = { "id", "Назва", "Підприємство", "Начальник" };
+        string[] oldColumnNames = { "id", "name", "id_enterprise", "id_boss" };
+        public FormWorkshop()
         {
          
             DataBase database = new DataBase();
@@ -32,7 +32,7 @@ namespace WindowsFormsApp1
             KeyDown += FormGoods_KeyDown; // Привязываем обработчик события KeyDown к форме
             panelMenu.BackColor = Color.Black;
             panelDesktop.BackColor = Color.Black;
-            DataTable tableData = database.GetTableData("testing_product", oldColumnNames, newColumNames, valueColumns);
+            DataTable tableData = database.GetTableData("workshop", oldColumnNames, newColumNames, valueColumns);
             dataGridViewTable.DataSource = tableData;
             // Прибираємо рядок зліва
             dataGridViewTable.RowHeadersVisible = false;
@@ -83,7 +83,7 @@ namespace WindowsFormsApp1
         private void btnInsert_Click(object sender, EventArgs e)
         {
             // Создание новой формы
-            var newForm = new FormInsertTestingProduct();
+            var newForm = new FormInsertWorkshop();
 
             // Открытие новой формы как модального диалога
             newForm.ShowDialog();
@@ -99,7 +99,7 @@ namespace WindowsFormsApp1
         private void btnDelete_Click(object sender, EventArgs e)
         {
             // Создание новой формы
-            var newForm = new FormDeleteTestingProduct();
+            var newForm = new FormDeleteWorkshop();
 
             // Открытие новой формы как модального диалога
             newForm.ShowDialog();
@@ -116,7 +116,7 @@ namespace WindowsFormsApp1
         private void button1_Click(object sender, EventArgs e)
         {
             // Создание новой формы
-            var newForm = new FormUpdateTestingProduct();
+            var newForm = new FormUpdateWorkshop();
 
             // Открытие новой формы как модального диалога
             newForm.ShowDialog();

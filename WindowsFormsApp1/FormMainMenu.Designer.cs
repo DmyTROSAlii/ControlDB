@@ -42,7 +42,6 @@ namespace WindowsFormsApp1
             this.btnArea = new System.Windows.Forms.Button();
             this.btnEnterprise = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
-            this.btnHome = new System.Windows.Forms.Label();
             this.panelTitleBar = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
             this.panelDesktop = new System.Windows.Forms.Panel();
@@ -91,6 +90,7 @@ namespace WindowsFormsApp1
             this.btnTestingProduct.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTestingProduct.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnTestingProduct.UseVisualStyleBackColor = false;
+            this.btnTestingProduct.Click += new System.EventHandler(this.btnTestingProduct_Click);
             // 
             // btnWorkcycle
             // 
@@ -110,6 +110,7 @@ namespace WindowsFormsApp1
             this.btnWorkcycle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnWorkcycle.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnWorkcycle.UseVisualStyleBackColor = false;
+            this.btnWorkcycle.Click += new System.EventHandler(this.btnWorkcycle_Click);
             // 
             // btnProductAttributes
             // 
@@ -274,26 +275,12 @@ namespace WindowsFormsApp1
             // panelLogo
             // 
             this.panelLogo.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panelLogo.Controls.Add(this.btnHome);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Margin = new System.Windows.Forms.Padding(2);
             this.panelLogo.Name = "panelLogo";
             this.panelLogo.Size = new System.Drawing.Size(185, 65);
             this.panelLogo.TabIndex = 0;
-            // 
-            // btnHome
-            // 
-            this.btnHome.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnHome.AutoSize = true;
-            this.btnHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnHome.ForeColor = System.Drawing.Color.White;
-            this.btnHome.Location = new System.Drawing.Point(40, 20);
-            this.btnHome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(0, 20);
-            this.btnHome.TabIndex = 1;
-            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // panelTitleBar
             // 
@@ -318,7 +305,6 @@ namespace WindowsFormsApp1
             this.lblTitle.Size = new System.Drawing.Size(72, 25);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "HOME";
-            this.lblTitle.Click += new System.EventHandler(this.lblTitle_Click);
             // 
             // panelDesktop
             // 
@@ -343,7 +329,6 @@ namespace WindowsFormsApp1
             this.Name = "Form_DataBase";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DBLab";
-            this.Load += new System.EventHandler(this.Form_DataBase_Load);
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             this.panelLogo.PerformLayout();
@@ -364,7 +349,6 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Button btnWorkers;
         private System.Windows.Forms.Panel panelTitleBar;
         private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.Label btnHome;
         private System.Windows.Forms.Panel panelDesktop;
         private System.Windows.Forms.Button btnWorkcycle;
         private System.Windows.Forms.Button btnProductAttributes;

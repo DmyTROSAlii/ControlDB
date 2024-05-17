@@ -1,7 +1,7 @@
 ﻿
 namespace WindowsFormsApp1
 {
-    partial class FormArea
+    partial class FormWorkshop
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace WindowsFormsApp1
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormArea));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormWorkshop));
             this.panelDesktop = new System.Windows.Forms.Panel();
             this.panelDataGridView = new System.Windows.Forms.Panel();
             this.dataGridViewTable = new System.Windows.Forms.DataGridView();
@@ -197,7 +197,7 @@ namespace WindowsFormsApp1
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.btnEdit_Click);
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnDelete
             // 
@@ -239,7 +239,7 @@ namespace WindowsFormsApp1
             this.btnInsert.UseVisualStyleBackColor = false;
             this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
             // 
-            // FormArea
+            // FormWorkshop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -247,9 +247,9 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.panelDesktop);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "FormArea";
-            this.Text = "Area";
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form_KeyDown);
+            this.Name = "FormWorkshop";
+            this.Text = "Workshop";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormGoods_KeyDown);
             this.panelDesktop.ResumeLayout(false);
             this.panelDataGridView.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewTable)).EndInit();

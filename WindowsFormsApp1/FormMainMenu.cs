@@ -1,23 +1,21 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
     public partial class Form_DataBase : Form
     {
-        // Fields
-        private Button currentButton;
-        private Random random;
-        private int tempIndex;
-        private Form activeForm; // переменная для отслеживания активной формы
-        // Constructor
+        /// <summary>
+        /// Поля
+        /// </summary>
+        private Button currentButton; // для виділення кнопки
+        private Random random; // для рандомног вибору
+        private int tempIndex; // для перевірки індексу елементу
+        private Form activeForm; // для перевірки на активінсть форми
+        /// <summary>
+        /// Конструктор форми
+        /// </summary>
         public Form_DataBase()
         {
             InitializeComponent();
@@ -28,8 +26,10 @@ namespace WindowsFormsApp1
             panelDesktop.BackColor = Color.Black;
             
         }
-
-        // Methods
+        /// <summary>
+        /// Вибирає колір
+        /// </summary>
+        /// <returns></returns>
         private Color SelectThemeColor()
         {
             int index = random.Next(ThemeColor.ColorList.Count);
@@ -42,6 +42,10 @@ namespace WindowsFormsApp1
             return ColorTranslator.FromHtml(color);
 
         }
+        /// <summary>
+        /// Активація кнопки
+        /// </summary>
+        /// <param name="btnSender"></param>
         private void ActivateButton(object btnSender)
         {
             if(btnSender != null)
@@ -57,6 +61,9 @@ namespace WindowsFormsApp1
                 }
             }
         }
+        /// <summary>
+        /// Деактивація кнопки
+        /// </summary>
         private void DisableButton() 
         {
             foreach (Control previousBtn in panelMenu.Controls)
@@ -69,7 +76,10 @@ namespace WindowsFormsApp1
                 }
             }
         }
-
+        /// <summary>
+        /// Для відкриття додаткової форми
+        /// </summary>
+        /// <param name="childForm"></param>
         private void OpenChildForm(Form childForm)
         {
             if (activeForm != null)
@@ -84,77 +94,115 @@ namespace WindowsFormsApp1
             childForm.BringToFront();
             childForm.Show();
         }
-
-        private void btnHome_Click(object sender, EventArgs e)
-        {
-            Reset();
-        }
-
-        private void Reset()
-        {
-            DisableButton();
-        }
-
-        private void Form_DataBase_Load(object sender, EventArgs e)
-        {
-
-        }
-
+        /// <summary>
+        /// Відкриває нову форму з даними про таблицю
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnEnterprise_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
             lblTitle.Text = "Enterprise";
             OpenChildForm(new FormEnterprise());
         }
-
+        /// <summary>
+        /// Відкриває нову форму з даними про таблицю
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnArea_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
             lblTitle.Text = "Area";
             OpenChildForm(new FormArea());
         }
-
+        /// <summary>
+        /// Відкриває нову форму з даними про таблицю
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnBrigade_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
             lblTitle.Text = "Brigade";
             OpenChildForm(new FormBrigade());
         }
-
+        /// <summary>
+        /// Відкриває нову форму з даними про таблицю
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnWorkers_Click(object sender, EventArgs e)
         {
-
+            ActivateButton(sender);
+            lblTitle.Text = "Workers";
+            OpenChildForm(new FormWorkers());
         }
-
+        /// <summary>
+        /// Відкриває нову форму з даними про таблицю
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnWorkshop_Click(object sender, EventArgs e)
         {
-
+            ActivateButton(sender);
+            lblTitle.Text = "Workshop";
+            OpenChildForm(new FormWorkshop());
         }
-
-        private void lblTitle_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        /// <summary>
+        /// Відкриває нову форму з даними про таблицю
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnProductCategory_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
             lblTitle.Text = "ProductCategory";
             OpenChildForm(new FormProductCategory());
         }
-
+        /// <summary>
+        /// Відкриває нову форму з даними про таблицю
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnProductType_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
             lblTitle.Text = "ProductType";
             OpenChildForm(new FormProductType());
         }
-
+        /// <summary>
+        /// Відкриває нову форму з даними про таблицю
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnProductAttributes_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
             lblTitle.Text = "ProductAttributes";
             OpenChildForm(new FormProductAttributes());
+        }
+        /// <summary>
+        /// Відкриває нову форму з даними про таблицю
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnWorkcycle_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            lblTitle.Text = "Workcycle";
+            OpenChildForm(new FormWorkcycle());
+        }
+        /// <summary>
+        /// Відкриває нову форму з даними про таблицю
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnTestingProduct_Click(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            lblTitle.Text = "TestingProduct";
+            OpenChildForm(new FormTestingProduct());
         }
     }
 }

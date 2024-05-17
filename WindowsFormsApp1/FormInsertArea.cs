@@ -1,13 +1,5 @@
-﻿using MySql.Data.MySqlClient;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Data.SqlClient;
+﻿using System;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp1
@@ -15,27 +7,26 @@ namespace WindowsFormsApp1
     public partial class FormInsertArea : Form
     {
         DataBase database = new DataBase();
-        string[] oldColumnNames = { "id", "name" };
         public FormInsertArea()
         {
             InitializeComponent();
             tableLayoutPanelDeskTop.BackColor = Color.Black;
         }
         /// <summary>
-        /// Внесеня данних в таблицю Goods по натиску кнопки
+        /// Внесеня данних в таблицю по натиску кнопки
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void btnInsert_Click(object sender, EventArgs e)
         {
-            int idValue = database.getIDFromTable("Area");
-            string name = textBox_Name.Text;
-            int idWorkshop = (int)(workshopNumeric.Value);
-            int idBoss = (int)(bossNumeric.Value);
-            string[] columnsName = { "id", "name", "id_workshop", "id_boss" };
-            string[] columnsValue = { Convert.ToString(idValue), name, Convert.ToString(idWorkshop), Convert.ToString(idBoss) };
-            database.AddElement("Area", columnsName, columnsValue);
-            this.Close();
+            int idValue = database.getIDFromTable("Area"); // отримуємо незайманий id
+            string name = textBox_Name.Text; // отимуємо внесену назву з форми
+            int idWorkshop = (int)(workshopNumeric.Value); // отримуємо внесений id майстерні з форми
+            int idBoss = (int)(bossNumeric.Value); // отримуємо внесений id начальника з форми
+            string[] columnsName = { "id", "name", "id_workshop", "id_boss" }; // записуємо назви стовбців таблиці Area
+            string[] columnsValue = { Convert.ToString(idValue), name, Convert.ToString(idWorkshop), Convert.ToString(idBoss) }; // записуємо значення до стовпців таблиці
+            database.AddElement("Area", columnsName, columnsValue); // викликаємо метод для додавання елементу до таблиці
+            this.Close(); // закриваємо дану форму
         }
     }
 }

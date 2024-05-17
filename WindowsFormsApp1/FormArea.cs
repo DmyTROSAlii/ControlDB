@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp1
@@ -13,23 +8,25 @@ namespace WindowsFormsApp1
 
     public partial class FormArea : Form
     {
+        /// <summary>
+        /// Обновлення виводу таблиці при яких-ось діях
+        /// </summary>
         private void ReloadData()
         {
             DataBase database = new DataBase();
             DataTable tableData = database.GetTableData("area", oldColumnNames, newColumNames, valueColumns, searchName);
             dataGridViewTable.DataSource = tableData;
         }
-        static string searchName;
-        static int valueColumns;
-        string[] newColumNames = { "id", "Назва", "Майстерня", "Начальник" };
-        string[] oldColumnNames = { "id", "name", "id_workshop", "id_boss" };
+        static string searchName; // назва для пошуку
+        static int valueColumns; // значення стовбців
+        string[] newColumNames = { "id", "Назва", "Майстерня", "Начальник" }; // назви ствовбців у таблиці як записано в БД
+        string[] oldColumnNames = { "id", "name", "id_workshop", "id_boss" }; // назви стовбців у таблиці як записано у формі виводу
         public FormArea()
         {
-         
-            DataBase database = new DataBase();
+            DataBase database = new DataBase(); 
             InitializeComponent();
-            KeyPreview = true; // Включаем просмотр клавиш на форме
-            KeyDown += FormGoods_KeyDown; // Привязываем обработчик события KeyDown к форме
+            KeyPreview = true; // Вмикаємо перегляд клавіщ на формі
+            KeyDown += Form_KeyDown; // Привязуємо обробник до кнопки
             panelMenu.BackColor = Color.Black;
             panelDesktop.BackColor = Color.Black;
             DataTable tableData = database.GetTableData("area", oldColumnNames, newColumNames, valueColumns);
@@ -61,49 +58,43 @@ namespace WindowsFormsApp1
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void FormGoods_KeyDown(object sender, KeyEventArgs e)
+        private void Form_KeyDown(object sender, KeyEventArgs e)
         {
-
             if (e.KeyCode == Keys.Enter)
             {
-                e.SuppressKeyPress = true; // Предотвращаем воспроизведение системного звука
-                // Проверяем, какая кнопка должна быть вызвана
-                if (ActiveControl == textBox_Find) // Замените textBox_Find на ваш TextBox
+                e.SuppressKeyPress = true; // Вимикаємо звук
+                // Перевіряємо кнопку
+                if (ActiveControl == textBox_Find) // Замінюємо textBox_Find на TextBox
                 {
-                    // Вызываем определенную кнопку
-                    btn_Find.PerformClick(); // Замените button_Search на вашу кнопку
+                    // Визиваємо кнопку
+                    btn_Find.PerformClick(); // Замінюємо button_Search на кнопку
                 }
             }
         }
         /// <summary>
-        /// Відкритя форми з вставкою Товару до Бази данних
+        /// Відкритя форми з вставкою елементу до Бази данних
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void btnInsert_Click(object sender, EventArgs e)
         {
-            // Создание новой формы
+            // Створення нової форми
             var newForm = new FormInsertArea();
-
-            // Открытие новой формы как модального диалога
+            // Відкриття нової форми як вікно діалога
             newForm.ShowDialog();
-            // Когда новая форма закрывается, предыдущая форма становится активной снова
+            // Коли ця форма закривається, попередня стає активною
             this.Activate();
             ReloadData();
         }
         /// <summary>
-        /// Відкритя форми з видаленням Товару з Бази данних
+        /// Відкритя форми з видаленням елементу з Бази данних
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            // Создание новой формы
             var newForm = new FormDeleteArea();
-
-            // Открытие новой формы как модального диалога
             newForm.ShowDialog();
-            // Когда новая форма закрывается, предыдущая форма становится активной снова
             this.Activate();
             ReloadData();
         }
@@ -112,15 +103,10 @@ namespace WindowsFormsApp1
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-
-        private void button1_Click(object sender, EventArgs e)
+        private void btnEdit_Click(object sender, EventArgs e)
         {
-            // Создание новой формы
             var newForm = new FormUpdateArea();
-
-            // Открытие новой формы как модального диалога
             newForm.ShowDialog();
-            // Когда новая форма закрывается, предыдущая форма становится активной снова
             this.Activate();
             ReloadData();
         }

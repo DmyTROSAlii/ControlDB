@@ -1,7 +1,7 @@
 ﻿
 namespace WindowsFormsApp1
 {
-    partial class FormUpdateArea
+    partial class FormUpdateWorkshop
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace WindowsFormsApp1
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormUpdateArea));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormUpdateWorkshop));
             this.panelDeskTop = new System.Windows.Forms.Panel();
             this.tableLayoutPanelDeskTop = new System.Windows.Forms.TableLayoutPanel();
             this.nameText = new System.Windows.Forms.Label();
@@ -37,14 +37,14 @@ namespace WindowsFormsApp1
             this.idText = new System.Windows.Forms.Label();
             this.idNumeric = new System.Windows.Forms.NumericUpDown();
             this.nameBox = new System.Windows.Forms.TextBox();
-            this.workshopNumeric = new System.Windows.Forms.NumericUpDown();
+            this.enterpriseNumeric = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
             this.bossNumeric = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.panelDeskTop.SuspendLayout();
             this.tableLayoutPanelDeskTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.idNumeric)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.workshopNumeric)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.enterpriseNumeric)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bossNumeric)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,7 +55,7 @@ namespace WindowsFormsApp1
             this.panelDeskTop.Location = new System.Drawing.Point(0, 0);
             this.panelDeskTop.Margin = new System.Windows.Forms.Padding(2);
             this.panelDeskTop.Name = "panelDeskTop";
-            this.panelDeskTop.Size = new System.Drawing.Size(602, 196);
+            this.panelDeskTop.Size = new System.Drawing.Size(602, 244);
             this.panelDeskTop.TabIndex = 1;
             // 
             // tableLayoutPanelDeskTop
@@ -69,7 +69,7 @@ namespace WindowsFormsApp1
             this.tableLayoutPanelDeskTop.Controls.Add(this.idText, 0, 0);
             this.tableLayoutPanelDeskTop.Controls.Add(this.idNumeric, 1, 0);
             this.tableLayoutPanelDeskTop.Controls.Add(this.nameBox, 1, 1);
-            this.tableLayoutPanelDeskTop.Controls.Add(this.workshopNumeric, 1, 3);
+            this.tableLayoutPanelDeskTop.Controls.Add(this.enterpriseNumeric, 1, 3);
             this.tableLayoutPanelDeskTop.Controls.Add(this.label2, 0, 3);
             this.tableLayoutPanelDeskTop.Controls.Add(this.bossNumeric, 1, 10);
             this.tableLayoutPanelDeskTop.Controls.Add(this.label1, 0, 10);
@@ -81,16 +81,16 @@ namespace WindowsFormsApp1
             this.tableLayoutPanelDeskTop.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanelDeskTop.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanelDeskTop.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanelDeskTop.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 45.29914F));
+            this.tableLayoutPanelDeskTop.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 23.63636F));
             this.tableLayoutPanelDeskTop.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanelDeskTop.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanelDeskTop.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanelDeskTop.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanelDeskTop.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanelDeskTop.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanelDeskTop.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 54.70086F));
+            this.tableLayoutPanelDeskTop.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 76.36364F));
             this.tableLayoutPanelDeskTop.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanelDeskTop.Size = new System.Drawing.Size(602, 196);
+            this.tableLayoutPanelDeskTop.Size = new System.Drawing.Size(602, 244);
             this.tableLayoutPanelDeskTop.TabIndex = 0;
             // 
             // nameText
@@ -112,10 +112,10 @@ namespace WindowsFormsApp1
             this.btnUpdate.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
-            this.btnUpdate.Location = new System.Drawing.Point(182, 109);
+            this.btnUpdate.Location = new System.Drawing.Point(182, 158);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(418, 85);
+            this.btnUpdate.Size = new System.Drawing.Size(418, 84);
             this.btnUpdate.TabIndex = 7;
             this.btnUpdate.Text = "Змінити товар";
             this.btnUpdate.UseVisualStyleBackColor = true;
@@ -149,12 +149,12 @@ namespace WindowsFormsApp1
             this.nameBox.Size = new System.Drawing.Size(416, 20);
             this.nameBox.TabIndex = 12;
             // 
-            // workshopNumeric
+            // enterpriseNumeric
             // 
-            this.workshopNumeric.Location = new System.Drawing.Point(183, 55);
-            this.workshopNumeric.Name = "workshopNumeric";
-            this.workshopNumeric.Size = new System.Drawing.Size(416, 20);
-            this.workshopNumeric.TabIndex = 14;
+            this.enterpriseNumeric.Location = new System.Drawing.Point(183, 55);
+            this.enterpriseNumeric.Name = "enterpriseNumeric";
+            this.enterpriseNumeric.Size = new System.Drawing.Size(416, 20);
+            this.enterpriseNumeric.TabIndex = 14;
             // 
             // label2
             // 
@@ -168,11 +168,11 @@ namespace WindowsFormsApp1
             this.label2.Padding = new System.Windows.Forms.Padding(4);
             this.label2.Size = new System.Drawing.Size(84, 21);
             this.label2.TabIndex = 15;
-            this.label2.Text = "Workshop№";
+            this.label2.Text = "Enterprise№";
             // 
             // bossNumeric
             // 
-            this.bossNumeric.Location = new System.Drawing.Point(183, 80);
+            this.bossNumeric.Location = new System.Drawing.Point(183, 79);
             this.bossNumeric.Name = "bossNumeric";
             this.bossNumeric.Size = new System.Drawing.Size(416, 20);
             this.bossNumeric.TabIndex = 16;
@@ -183,7 +183,7 @@ namespace WindowsFormsApp1
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(124, 77);
+            this.label1.Location = new System.Drawing.Point(124, 76);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Padding = new System.Windows.Forms.Padding(4);
@@ -191,11 +191,11 @@ namespace WindowsFormsApp1
             this.label1.TabIndex = 13;
             this.label1.Text = "Boss№";
             // 
-            // FormUpdateArea
+            // FormUpdateWorkshop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(602, 196);
+            this.ClientSize = new System.Drawing.Size(602, 244);
             this.Controls.Add(this.panelDeskTop);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -203,14 +203,14 @@ namespace WindowsFormsApp1
             this.MaximumSize = new System.Drawing.Size(618, 411);
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(618, 111);
-            this.Name = "FormUpdateArea";
+            this.Name = "FormUpdateWorkshop";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Edit";
             this.panelDeskTop.ResumeLayout(false);
             this.tableLayoutPanelDeskTop.ResumeLayout(false);
             this.tableLayoutPanelDeskTop.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.idNumeric)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.workshopNumeric)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.enterpriseNumeric)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bossNumeric)).EndInit();
             this.ResumeLayout(false);
 
@@ -224,7 +224,7 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Label nameText;
         private System.Windows.Forms.NumericUpDown idNumeric;
         private System.Windows.Forms.TextBox nameBox;
-        private System.Windows.Forms.NumericUpDown workshopNumeric;
+        private System.Windows.Forms.NumericUpDown enterpriseNumeric;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.NumericUpDown bossNumeric;
         private System.Windows.Forms.Label label1;

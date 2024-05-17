@@ -1,27 +1,33 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
 using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class FormDeleteArea : Form
+    public partial class FormDeleteWorkshop : Form
     {
         DataBase database = new DataBase();
-        public FormDeleteArea()
+        public FormDeleteWorkshop()
         {
             InitializeComponent();
             tableLayoutPanelDeskTop.BackColor = Color.Black;
         }
         /// <summary>
-        /// Видалення елементу по натиску кнопки
+        /// Видалення товару по натиску кнопки
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void btn_Delete_Click(object sender, EventArgs e)
         {
-            int id = (int)(numericID.Value); // отримуємо внесений id
-            database.DeleteElement(id, "area"); // викликаємо метод для видалення елементу з таблиці
-            this.Close(); // закриваємо дану форму
+            int id = (int)(numericID.Value);
+            database.DeleteElement(id, "workshop");
+            this.Close();
         }
     }
 }

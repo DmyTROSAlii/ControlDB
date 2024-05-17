@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp1
@@ -26,15 +20,15 @@ namespace WindowsFormsApp1
         /// <param name="e"></param>
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            int idValue = (int)(idNumeric.Value);
-            string name = nameBox.Text;
-            int idWorkshop = (int)(workshopNumeric.Value);
-            int idBoss = (int)(bossNumeric.Value);
-            string[] columnsName = { "id", "name", "id_workshop", "id_boss" };
-            string[] columnsValue = { Convert.ToString(idValue), name, Convert.ToString(idWorkshop), Convert.ToString(idBoss) };
-            database.UpdateElement(idValue, "area", columnsName, columnsValue);
-            MessageBox.Show("Товар успішно змінено.");
-            this.Close();
+            int idValue = (int)(idNumeric.Value); // отримуємо внесений id з форми
+            string name = nameBox.Text; // отимуємо внесену назву з форми
+            int idWorkshop = (int)(workshopNumeric.Value); // отримуємо внесений id майстерні з форми
+            int idBoss = (int)(bossNumeric.Value); // отримуємо внесений id начальника з форми
+            string[] columnsName = { "id", "name", "id_workshop", "id_boss" }; // записуємо назви стовбців таблиці Area
+            string[] columnsValue = { Convert.ToString(idValue), name, Convert.ToString(idWorkshop), Convert.ToString(idBoss) }; // записуємо значення до стовпців таблиці
+            database.UpdateElement(idValue, "area", columnsName, columnsValue);  // викликаємо метод для редагування елементу у таблиці
+            MessageBox.Show("Товар успішно змінено."); // виводимо повідомлення, що товар успішно змінений
+            this.Close(); // закриваємо дану форму
         }
     }
 }

@@ -1,15 +1,8 @@
 ﻿using MySql.Data.MySqlClient;
-using Org.BouncyCastle.Crypto;
 using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Globalization;
 using System.Linq;
-using System.Runtime.Remoting.Messaging;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-
 namespace WindowsFormsApp1
 {
     class DataBase
@@ -26,63 +19,23 @@ namespace WindowsFormsApp1
                 sqlConnection.Open();
             }
         }
-        // =======================================================================================
-    
-
-
-        // =======================================================================================
         /// <summary>
-        /// Отримання списку товарів по категорії
+        /// Закритя підключення к базі даних
         /// </summary>
-        /// <param name="id_prod_category"></param>
-        /// <returns></returns>
-        public List<string> GetProductNamesByCategory(int? id_prod_category = null)
+        public void closeConnection()
         {
-            List<string> productNames = new List<string>();
-
-            try
+            if (sqlConnection.State == ConnectionState.Open)
             {
-                openConnection();
-
-                string query = "SELECT id, name FROM goods";
-
-                if (id_prod_category != null)
-                {
-                    query += " WHERE id_prod_category = @category";
-                }
-
-                MySqlCommand command = new MySqlCommand(query, sqlConnection);
-
-                if (id_prod_category != null)
-                {
-                    command.Parameters.AddWithValue("@category", id_prod_category);
-                }
-
-                using (MySqlDataReader reader = command.ExecuteReader())
-                {
-                    while (reader.Read())
-                    {
-                        int id = reader.GetInt32("id");
-                        string name = reader.GetString("name");
-                        string formattedName = id + " - " + name;
-                        productNames.Add(formattedName);
-                    }
-                }
+                sqlConnection.Close();
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Помилка при отриманні списку товарів за категорією: " + ex.Message);
-            }
-            finally
-            {
-                closeConnection();
-            }
-
-            return productNames;
         }
-
-
-        
+        /// <summary>
+        /// Отримання поля з використанням підлкюченя до БД
+        /// </summary>
+        public MySqlConnection getConnection()
+        {
+            return sqlConnection;
+        }
         // =======================================================================================
         /// <summary>
         /// Вивод таблиць на DataGridView
@@ -107,22 +60,6 @@ namespace WindowsFormsApp1
                     string oldColumnName = oldColumnNames[i];
                     string newColumnName = newColumnNames[i];
                     query += $"{oldColumnName} AS `{newColumnName}`, ";
-                    // Handle special cases for joining other tables
-                    /*if (oldColumnName.StartsWith("id_"))
-                    {
-                        if (oldColumnName != "id_brigade" || oldColumnName != "id_workcycle")
-                        {
-                            query += $"{oldColumnName}.name AS `{newColumnName}`, ";
-                        }
-                        else
-                        {
-                            query += $"{oldColumnName}.id AS `{newColumnName}`, ";
-                        }
-                    }
-                    else
-                    {
-                        query += $"g.`{oldColumnName}` AS `{newColumnName}`, ";
-                    }*/
                 }
 
                 // Remove the trailing comma and space
@@ -130,15 +67,6 @@ namespace WindowsFormsApp1
 
                 // Add the table name and join statements
                 query += $" FROM `{tableName}` g ";
-
-                /*foreach (string oldColumnName in oldColumnNames)
-                {
-                    if (oldColumnName.StartsWith("id_"))
-                    {
-                        string referencedTableName = oldColumnName.Substring(3);  // Remove "id_" prefix
-                        query += $"LEFT JOIN `{referencedTableName}` ON g.`{oldColumnName}` = `{referencedTableName}`.id ";
-                    }
-                }*/
 
                 if (!string.IsNullOrEmpty(searchName))
                 {
@@ -167,68 +95,12 @@ namespace WindowsFormsApp1
 
             return dataTable;
         }
-
         // =======================================================================================
-
-
-
-        // =======================================================================================
-
         /// <summary>
-        /// Отримання назв таблиць з Бази данних
+        /// Отримання id, який не зайнятий для вставки нового елементу
         /// </summary>
-        /// <returns></returns>
-        public List<string> GetTableNames()
-        {
-            List<string> tableNames = new List<string>();
-
-            try
-            {
-                openConnection();
-
-                string query = "SHOW TABLES";
-                MySqlCommand command = new MySqlCommand(query, sqlConnection);
-                MySqlDataReader reader = command.ExecuteReader();
-
-                while (reader.Read())
-                {
-                    string tableName = reader.GetString(0);
-                    tableNames.Add(tableName);
-                }
-
-                reader.Close();
-            }
-            catch (MySqlException ex)
-            {
-                MessageBox.Show("Виникла помилка при отриманні назв таблиць: " + ex.Message);
-            }
-            finally
-            {
-                closeConnection();
-            }
-
-            return tableNames;
-        }
-
-
-        /// <summary>
-        /// Закритя підключення к базі даних
-        /// </summary>
-        public void closeConnection()
-        {
-            if (sqlConnection.State == ConnectionState.Open)
-            {
-                sqlConnection.Close();
-            }
-        }
-
-        public MySqlConnection getConnection()
-        {
-            return sqlConnection;
-        }
-
-        // -------------------------------------------------------
-
+        /// <param name="nameTable"></param>
+        /// <returns>id + 1</returns>
         public int getIDFromTable(string nameTable)
         {
             string query = "SELECT COUNT(*) FROM " + nameTable;
@@ -258,7 +130,12 @@ namespace WindowsFormsApp1
 
             return id + 1;
         }
-
+        /// <summary>
+        /// Додавання нового елементу до таблиці
+        /// </summary>
+        /// <param name="nameTable"></param>
+        /// <param name="columnsName"></param>
+        /// <param name="columnsValue"></param>
         public void AddElement(string nameTable, string[] columnsName, string[] columnsValue)
         {
             try
@@ -288,7 +165,11 @@ namespace WindowsFormsApp1
                 closeConnection();
             }
         }
-
+        /// <summary>
+        /// Видалення елементу з таблиці по id 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="nameTables"></param>
         public void DeleteElement(int id, string nameTables)
         {
             try
@@ -297,8 +178,6 @@ namespace WindowsFormsApp1
 
                 string query = "DELETE FROM " + nameTables + " WHERE id = " + id;
                 MySqlCommand command = new MySqlCommand(query, sqlConnection);
-                //command.Parameters.AddWithValue("@id", id);
-                //command.Parameters.AddWithValue("@nameTables", nameTables);
 
                 int rowsAffected = command.ExecuteNonQuery();
 
@@ -320,7 +199,13 @@ namespace WindowsFormsApp1
                 closeConnection();
             }
         }
-
+        /// <summary>
+        /// Редагування елементу з таблиці по id 
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="nameTable"></param>
+        /// <param name="columnsName"></param>
+        /// <param name="columnsValue"></param>
         public void UpdateElement(int id, string nameTable, string[] columnsName, string[] columnsValue)
         {
             try
@@ -336,8 +221,6 @@ namespace WindowsFormsApp1
                 query += " WHERE id = " + id;
 
                 MySqlCommand command = new MySqlCommand(query, sqlConnection);
-                //command.Parameters.AddWithValue("@id", id);
-                //command.Parameters.AddWithValue("@nameTable", nameTable);
                 for (int i = 0; i < columnsName.Length; i++)
                 {
                     command.Parameters.AddWithValue("@" + columnsName[i], columnsValue[i]);
