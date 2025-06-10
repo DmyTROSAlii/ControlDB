@@ -39,7 +39,7 @@
 
 ---
 
-## ⚙️ Installation
+## ⚙ Installation
 
 1. **Clone the repository:**
    ```sh
@@ -58,7 +58,7 @@
 
 ---
 
-## ▶️ Usage
+## ▶ Usage
 
 - **Main Menu:** Use the main menu to navigate between different entity management forms.
 - **CRUD Operations:** Each entity has dedicated forms for adding, editing, and deleting records.
