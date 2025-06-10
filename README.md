@@ -43,7 +43,7 @@
 
 1. **Clone the repository:**
    ```sh
-   git clone <your-repo-url>
+   git clone https://github.com/DmyTROSAlii/ControlDB.git
    ```
 2. **Open the solution:**
    - Open `WindowsFormsApp1.sln` in Visual Studio.
